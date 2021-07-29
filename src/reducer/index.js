@@ -70,177 +70,177 @@ const initialState = {
             // }
         ]
     }, 
-    // accounts : [{"Fecha": "", "Usuario": "", "Tipo de gasto": `Sin datos, actualiza la tabla`, "Costo": "", "Comentario":""}]
-    accounts: [
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '26/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Mercado',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        },
-        {
-            Fecha: '1/07/2021',
-            Usuario: 'Javier',
-            'Tipo de gasto': 'Arriendo',
-            Costo: ' $600.000',
-            Comentario: 'rtertet'
-        }
-    ]
+    accounts : [{"Fecha": "", "Usuario": "", "Tipo de gasto": `Sin datos, actualiza la tabla`, "Costo": "", "Comentario":""}]
+    // accounts: [
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '26/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Mercado',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     },
+    //     {
+    //         Fecha: '1/07/2021',
+    //         Usuario: 'Javier',
+    //         'Tipo de gasto': 'Arriendo',
+    //         Costo: ' $600.000',
+    //         Comentario: 'rtertet'
+    //     }
+    // ]
 }
 
 const reducer = (state = initialState, action) => {
