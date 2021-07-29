@@ -1,6 +1,6 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setCurrentAccount } from '../actions';
 import '../assets/styles/components/FormAccounts.css';
 
@@ -19,9 +19,6 @@ const FormAccounts = ({ togglePopup }) => {
 
     const addCommas = num => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     const removeNonNumeric = num => num.toString().replace(/[^0-9]/g, "");
-
-    
-    
 
     const normalizeInput = event  => {
         setCostInput(addCommas(removeNonNumeric(event.target.value)));

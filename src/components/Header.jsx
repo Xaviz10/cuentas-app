@@ -10,7 +10,7 @@ const Header = () => {
     
     return(    
         <header className="header-gastos-comunes">
-            <a href='#' className="header-gastos-comunes__logo">
+            <a href='/' className="header-gastos-comunes__logo">
                 <img src={gastosComunesIcon} alt="Cuentas comunes logo" />
             </a>
         </header>

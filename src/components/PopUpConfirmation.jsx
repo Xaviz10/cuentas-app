@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { postAccount, resetDataSend } from '../actions';
 import '../assets/styles/components/PopUpConfirmation.css';
 
 import loadingIcon from '../assets/static/icons/loading-icon.gif';
+
+
 
 const PopUpConfirmation = ({ popupState, togglePopup }) => {
 
@@ -17,7 +19,6 @@ const PopUpConfirmation = ({ popupState, togglePopup }) => {
     }
 
     const handleDataSendConfirmation = () => {
-        console.log('Final')
         setTimeout(() => {
             dispatch(resetDataSend());
         }, 2000)

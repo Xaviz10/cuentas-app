@@ -4,11 +4,14 @@ import '../assets/styles/Home.css';
 import Header from '../components/Header';
 import FormAccounts from '../components/FormAccounts';
 import PopUpConfirmation from '../components/PopUpConfirmation';
+import PopUpNewItem from '../components/PopUpNewItem';
 import TableViewer from '../components/TableViewer';
+import ShoppingList from '../components/ShoppingList';
 
 const Home = () => {
 
     const [popupState, setPopupState] = useState(false);
+    const [popupNewItemState, setPopupNewItemState] = useState(false);
     const formatterCurrency = new Intl.NumberFormat('es-CO', {
         style: 'currency',
         currency: 'COP',
@@ -23,13 +26,25 @@ const Home = () => {
     const togglePopup = () => {
         setPopupState(previus => !previus)
     }
+
+    const togglePopupNewItem = () => {
+        setPopupNewItemState(previus => !previus)
+    }
     return (
-        <div className="home-container">
-            <Header/>
-            <FormAccounts togglePopup={togglePopup} />
-            <PopUpConfirmation popupState={popupState} togglePopup={togglePopup} formatterCurrency={formatterCurrency} />
-            <TableViewer dateHourFormater={dateHourFormater}/>
-        </div>
+        <>
+            <Header />
+            <div className="home-container">
+                <FormAccounts togglePopup={togglePopup} />
+                <div className="home-container__tables">
+                    <TableViewer dateHourFormater={dateHourFormater} />
+                    <ShoppingList dateHourFormater={dateHourFormater} togglePopupNewItem={togglePopupNewItem}/>
+                </div>
+            </div>
+            <PopUpConfirmation popupState={popupState} togglePopup={togglePopup}  />
+            <PopUpNewItem popupNewItemState={popupNewItemState} togglePopupNewItem={togglePopupNewItem }/>
+        </>
+
+
     );
 }
 

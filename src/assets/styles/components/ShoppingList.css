@@ -1,0 +1,215 @@
+.shopping-list-outer-container {
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    height: 50%;
+}
+
+
+.shopping-list-outer-container .shopping-list-title {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #181818;
+}
+
+.shopping-list-outer-container .shopping-list-title::before{
+    right: .5em;
+    margin-left: -50%;
+}
+
+.shopping-list-outer-container .shopping-list-title::after{
+    left: .5em;
+    margin-right: -50%;
+}
+
+.shopping-list-title::before,
+.shopping-list-title::after{
+    background-color: gray;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.shopping-list-outer-container .shopping-list-last-update {
+    position: absolute;
+    top: 50px;
+    
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+
+}
+
+.shopping-list-outer-container .shopping-list-last-update  span {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-weight: bold;
+}
+
+.shopping-list-outer-container .new-item-button{
+    position: relative;
+    left:calc(100% - 170px);
+    width: 160px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 5px;
+    padding-left: 30px;
+
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: rgb(0, 0, 255);
+
+    background: white;
+    box-shadow: 0px 0px 5px rgb(60, 60, 255);
+    border: 2px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-item-button .new-item-button--add-icon{
+    position: absolute;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.shopping-list-inner-container {
+    display: block;
+    position: relative;
+    padding: 10px;
+    height: calc(100% - 75px);
+    overflow: hidden;
+    overflow-y: scroll;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1px rgb(0, 0, 97);
+    border-radius: 5px;
+
+}
+
+.shopping-list-inner-container .shopping-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+    list-style: none;
+    vertical-align: middle;
+
+}
+.shopping-list .shopping-list__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 30px 30px auto;
+    grid-template-rows: 1fr;
+
+    margin-right: 10px;
+    padding: 5px 0 ;
+    width: 240px;
+    height: 40px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+}
+.shopping-list .shopping-list__item input {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    place-self: center;
+
+
+    left: 0;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+
+    border-radius: 5px;
+}
+
+
+.shopping-list .shopping-list__item .item__comment {
+    padding: 0 5px;
+    font-weight: 300;
+
+}
+
+.shopping-list .shopping-list__item .item__delete-button {
+    position: relative;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    place-self: center;
+
+    display: grid;
+    place-items: center;
+    top: 0px;
+    left: calc(100% - 30px);
+    width: 25px;
+    height: 25px;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px rgb(0, 0, 97);
+    border-radius: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.shopping-list .shopping-list__item .item__delete-button:active {
+    background-color: rgba(0, 0, 255, 0.466);
+}
+.item__delete-button span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shopping-list .shopping-list__item p {
+    position: relative;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: center;
+    max-width: 180px;
+    padding-left: 5px;
+
+    word-wrap: break-word
+}
+
+.shopping-list-loading {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: grid;
+    place-items: center;
+    width: calc(100% + 10px);
+    height: 100%;
+
+    background:rgba(0, 0, 0, 0.5);
+
+    z-index: 1;
+}
+
+.shopping-list-loading span {
+    width: 80px;
+    height: 80px;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
