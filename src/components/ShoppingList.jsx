@@ -16,8 +16,11 @@ const ShoppingList = ({togglePopupNewItem, dateHourFormater}) => {
     const shoppingList = useSelector(state => state.shopping.shopping_list);
     const loading = useSelector(state => state.shopping.loading);
     console.log(shoppingList.length)
+
     useEffect(() => {
-        dispatch(getProductList())
+        dispatch(getProductList());
+        setLastUpdate(dateHourFormater());
+
     }, []);
 
     const handleDeleteItem = (itemName) => {
