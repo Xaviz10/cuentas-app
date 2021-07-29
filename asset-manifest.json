@@ -1,28 +1,31 @@
 {
   "files": {
-    "main.css": "/cuentas-app/static/css/main.06b9d11f.chunk.css",
-    "main.js": "/cuentas-app/static/js/main.036ce74c.chunk.js",
-    "main.js.map": "/cuentas-app/static/js/main.036ce74c.chunk.js.map",
+    "main.css": "/cuentas-app/static/css/main.35d2f9e4.chunk.css",
+    "main.js": "/cuentas-app/static/js/main.44813996.chunk.js",
+    "main.js.map": "/cuentas-app/static/js/main.44813996.chunk.js.map",
     "runtime-main.js": "/cuentas-app/static/js/runtime-main.c69e5ad9.js",
     "runtime-main.js.map": "/cuentas-app/static/js/runtime-main.c69e5ad9.js.map",
-    "static/js/2.fb97bef3.chunk.js": "/cuentas-app/static/js/2.fb97bef3.chunk.js",
-    "static/js/2.fb97bef3.chunk.js.map": "/cuentas-app/static/js/2.fb97bef3.chunk.js.map",
+    "static/js/2.1951dce9.chunk.js": "/cuentas-app/static/js/2.1951dce9.chunk.js",
+    "static/js/2.1951dce9.chunk.js.map": "/cuentas-app/static/js/2.1951dce9.chunk.js.map",
     "index.html": "/cuentas-app/index.html",
-    "static/css/main.06b9d11f.chunk.css.map": "/cuentas-app/static/css/main.06b9d11f.chunk.css.map",
-    "static/js/2.fb97bef3.chunk.js.LICENSE.txt": "/cuentas-app/static/js/2.fb97bef3.chunk.js.LICENSE.txt",
+    "static/css/main.35d2f9e4.chunk.css.map": "/cuentas-app/static/css/main.35d2f9e4.chunk.css.map",
+    "static/js/2.1951dce9.chunk.js.LICENSE.txt": "/cuentas-app/static/js/2.1951dce9.chunk.js.LICENSE.txt",
     "static/media/calendar-icon.2219f59f.svg": "/cuentas-app/static/media/calendar-icon.2219f59f.svg",
     "static/media/comment-icon.e2811a2f.svg": "/cuentas-app/static/media/comment-icon.e2811a2f.svg",
+    "static/media/delete-icon.d4895997.svg": "/cuentas-app/static/media/delete-icon.d4895997.svg",
     "static/media/gastos-comunes-icon.6578e9ee.svg": "/cuentas-app/static/media/gastos-comunes-icon.6578e9ee.svg",
     "static/media/loading-icon.7f79218f.gif": "/cuentas-app/static/media/loading-icon.7f79218f.gif",
+    "static/media/new-item-icon.85b83752.svg": "/cuentas-app/static/media/new-item-icon.85b83752.svg",
     "static/media/price-icon.e822666f.svg": "/cuentas-app/static/media/price-icon.e822666f.svg",
+    "static/media/product-icon.9733a079.svg": "/cuentas-app/static/media/product-icon.9733a079.svg",
     "static/media/refresh-icon.8429e74d.svg": "/cuentas-app/static/media/refresh-icon.8429e74d.svg",
     "static/media/type-icon.d8f40693.svg": "/cuentas-app/static/media/type-icon.d8f40693.svg",
     "static/media/user-icon.83c6af46.svg": "/cuentas-app/static/media/user-icon.83c6af46.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c69e5ad9.js",
-    "static/js/2.fb97bef3.chunk.js",
-    "static/css/main.06b9d11f.chunk.css",
-    "static/js/main.036ce74c.chunk.js"
+    "static/js/2.1951dce9.chunk.js",
+    "static/css/main.35d2f9e4.chunk.css",
+    "static/js/main.44813996.chunk.js"
   ]
 }
