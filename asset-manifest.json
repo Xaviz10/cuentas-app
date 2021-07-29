@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cuentas-app/static/css/main.35d2f9e4.chunk.css",
-    "main.js": "/cuentas-app/static/js/main.44813996.chunk.js",
-    "main.js.map": "/cuentas-app/static/js/main.44813996.chunk.js.map",
+    "main.js": "/cuentas-app/static/js/main.f964c2ff.chunk.js",
+    "main.js.map": "/cuentas-app/static/js/main.f964c2ff.chunk.js.map",
     "runtime-main.js": "/cuentas-app/static/js/runtime-main.c69e5ad9.js",
     "runtime-main.js.map": "/cuentas-app/static/js/runtime-main.c69e5ad9.js.map",
     "static/js/2.1951dce9.chunk.js": "/cuentas-app/static/js/2.1951dce9.chunk.js",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.c69e5ad9.js",
     "static/js/2.1951dce9.chunk.js",
     "static/css/main.35d2f9e4.chunk.css",
-    "static/js/main.44813996.chunk.js"
+    "static/js/main.f964c2ff.chunk.js"
   ]
 }
