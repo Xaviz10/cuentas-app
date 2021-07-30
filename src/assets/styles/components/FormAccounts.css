@@ -59,7 +59,7 @@
 
     font-size: 1.6rem;
     font-weight: 500;
-    color: #a1a1a1;
+    color: #6e6e6e;
 } 
 
 .new-account-form label > *{
@@ -75,7 +75,7 @@
 
     font-size: 1.8rem;
     line-height: 2.1rem;
-    color: #777777;
+    color: #4b4b4b;
 }
 
 .new-account-form label span {

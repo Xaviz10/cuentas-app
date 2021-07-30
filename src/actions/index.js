@@ -4,12 +4,12 @@ export const postAccount = () => {
     return async (dispatch, getState) => {
         
         const newAccount = getState().current_account;
-        console.log('newAccount',newAccount)
+
         dispatch({
             type: 'POST_ACCOUNT_REQUESTED',
         })
-        const billData = await Axios.post('https://sheet.best/api/sheets/985f20ae-8841-4340-bbdb-491b3c707508', newAccount)
-        console.log(billData)
+
+        const billData = await Axios.post('https://sheet.best/api/sheets/985f20ae-8841-4340-bbdb-491b3c707508', newAccount);
 
         dispatch({
             type: 'POST_ACCOUNT_DONE',
@@ -23,8 +23,8 @@ export const getAccounts = () => {
         dispatch({
             type: 'GET_ACCOUNTS_REQUESTED',
         })
-        const accounts = await Axios.get('https://sheet.best/api/sheets/985f20ae-8841-4340-bbdb-491b3c707508')
-        console.log("ACCOUNTS",accounts.data)
+
+        const accounts = await Axios.get('https://sheet.best/api/sheets/985f20ae-8841-4340-bbdb-491b3c707508');
 
         dispatch({
             type: 'GET_ACCOUNTS_DONE',
@@ -45,13 +45,11 @@ export const resetDataSend = () => ({
 export const postNewItem = (newItem) => {
     return async (dispatch) => {
         
-        console.log('newItem',newItem)
         dispatch({
             type: 'POST_NEW_ITEM_REQUESTED',
         })
 
-        const newItemData = await Axios.post('https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122', newItem)
-        console.log(newItemData)
+        const newItemData = await Axios.post('https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122', newItem);
 
         dispatch({
             type: 'POST_NEW_ITEM_DONE',
@@ -69,18 +67,18 @@ export const deleteItem = (itemName) => {
         
         const itemIndex = getState().shopping.shopping_list.findIndex(item => {
             return (item.Producto === itemName);
-        })
-        console.log(itemIndex)
+        });
+
         dispatch({
             type: 'DELETE_ITEM_REQUESTED',
-        })
-        const deletedItem = await Axios.delete(`https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122/Producto/*${itemName}*`)
-        console.log("deletedItem",deletedItem)
+        });
+
+        const deletedItem = await Axios.delete(`https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122/Producto/*${itemName}*`);
 
         dispatch({
             type: 'DELETE_ITEM_DONE',
             payload: itemIndex
-        })
+        });
     }
 }
 export const getProductList = () => {
@@ -88,14 +86,39 @@ export const getProductList = () => {
         
         dispatch({
             type: 'GET_PRODUCT_LIST_REQUESTED',
-        })
-        const productList = await Axios.get('https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122')
-        console.log("productList",productList.data)
+        });
+        const productList = await Axios.get('https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122');
 
         dispatch({
             type: 'GET_PRODUCT_LIST_DONE',
             payload: productList.data.length ? productList.data : []
-        })
+        });
     }
 };
 
+export const patchItemBuy = (data, item) => {
+    return async (dispatch) => {
+        
+        console.log('itemPatch', item)
+        const itemName = item.Producto;
+
+        dispatch({
+            type: 'PATCH_ITEM_BUY_REQUESTED',
+        });
+        const billData = await Axios.patch(`https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122/Producto/*${itemName}*`, data)
+        console.log(billData)
+
+        dispatch({
+            type: 'PATCH_ITEM_BUY_DONE',
+        });
+    }
+};
+
+export const editProduct = (item) => ({
+    type: 'EDIT_PRODUCT',
+    payload: item,
+})
+
+export const resetEditProduct = () => ({
+    type: 'RESET_EDIT_PRODUCT'
+})

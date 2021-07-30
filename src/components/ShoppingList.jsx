@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getProductList, deleteItem } from '../actions';
+import { getProductList, deleteItem, patchItemBuy, editProduct } from '../actions';
 import '../assets/styles/components/ShoppingList.css';
 
 import deleteIcon from '../assets/static/icons/delete-icon.svg';
@@ -10,21 +10,31 @@ import loadingIcon from '../assets/static/icons/loading-icon.gif';
 
 
 const ShoppingList = ({togglePopupNewItem, dateHourFormater}) => {
-    const [lastUpdate, setLastUpdate] = useState("Nunca")
+    const [lastUpdate, setLastUpdate] = useState("Nunca");
 
     const dispatch = useDispatch();
     const shoppingList = useSelector(state => state.shopping.shopping_list);
     const loading = useSelector(state => state.shopping.loading);
-    console.log(shoppingList.length)
 
     useEffect(() => {
         dispatch(getProductList());
         setLastUpdate(dateHourFormater());
-
     }, []);
 
     const handleDeleteItem = (itemName) => {
         dispatch(deleteItem(itemName));
+    }
+
+    const handleItemState = (event, item) => {
+        let data = item;
+        const status = event.target.checked;
+        status ? data.Comprado = 'Si' : data.Comprado = 'No';
+        dispatch(patchItemBuy(data, item))
+    }
+
+    const handleEditProduct = (item) => {
+        dispatch(editProduct(item));
+        togglePopupNewItem();
     }
     return (
         <div className="shopping-list-outer-container">
@@ -42,12 +52,12 @@ const ShoppingList = ({togglePopupNewItem, dateHourFormater}) => {
                 <ul className="shopping-list">
                     {shoppingList.length ? shoppingList.slice(0).reverse().map((item, index) => {
                         return (
-                            <li key={index} className="shopping-list__item">
-                                <input type="checkbox" />
-                                <p>
+                            <li key={index} className="shopping-list__item" >
+                                <input type="checkbox" onChange={(event) => handleItemState(event, item)} defaultChecked={item.Comprado === "Si" ? true : false }/>
+                                <p onClick={() => handleEditProduct(item)}>
                                     {item.Producto}
                                     <span className="item__comment">
-                                        {`(${item.Comentario})`}
+                                        {item.Comentario ? `(${item.Comentario})` : ""}
                                     </span>
                                 </p>
 

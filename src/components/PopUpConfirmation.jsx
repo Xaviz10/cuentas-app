@@ -43,7 +43,7 @@ const PopUpConfirmation = ({ popupState, togglePopup }) => {
                             <p>Fecha del gasto: <span>{currentAccount['Fecha']}</span></p>
                             <p>Usuario: <span>{currentAccount['Usuario']}</span></p>
                             <p>Tipo de gasto: <span>{currentAccount['Tipo de gasto']}</span></p>
-                            <p>Costo: <span>{currentAccount['Costo']}</span></p>
+                            <p>Costo: <span>$ {currentAccount['Costo']}</span></p>
                             <p>Comentario: <span>{currentAccount['Comentario']}</span></p>
                             {dataSend ? <p className="message-confirmation"> La información fue envida! :)</p> : null}
                         </article>

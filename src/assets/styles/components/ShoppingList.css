@@ -2,7 +2,6 @@
     position: relative;
     overflow: hidden;
     padding: 10px;
-    height: 50%;
 }
 
 
@@ -187,8 +186,14 @@
     align-self: center;
     max-width: 180px;
     padding-left: 5px;
+    transition: 0.3s;
 
-    word-wrap: break-word
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.shopping-list .shopping-list__item p:hover {
+    font-size: 1.6rem;
 }
 
 .shopping-list-loading {

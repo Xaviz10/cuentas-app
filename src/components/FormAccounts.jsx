@@ -25,7 +25,8 @@ const FormAccounts = ({ togglePopup }) => {
     }
 
     const onSubmit = data => {
-        dispatch(setCurrentAccount(data))
+        dispatch(setCurrentAccount(data));
+        togglePopup();
     }
     return (
         <form className="new-account-form" onSubmit={handleSubmit(onSubmit)}>
@@ -33,17 +34,17 @@ const FormAccounts = ({ togglePopup }) => {
             <label >
                 Fecha:
                 <span style={{ backgroundImage: `url(${calendarIcon})` }}></span>
-                <input {...register('Fecha')} type="date" ></input>
+                <input {...register('Fecha', { required: true })} type="date" ></input>
             </label>
             <label >
                 Usuario:
                 <span style={{ backgroundImage: `url(${userIcon})` }}></span>
-                <input {...register('Usuario')} type="text" ></input>
+                <input {...register('Usuario', { required: true })} type="text" ></input>
             </label>
             <label >
                 Tipo de gasto:
                 <span style={{ backgroundImage: `url(${typeIcon})` }}></span>
-                <select {...register('Tipo de gasto')} >
+                <select {...register('Tipo de gasto', { required: true })} >
                     <option value="Arriendo">Arriendo</option>
                     <option value="Mercado">Mercado</option>
                     <option value="Luz">Luz</option>
@@ -59,14 +60,14 @@ const FormAccounts = ({ togglePopup }) => {
             <label >
                 Costo:
                 <span style={{ backgroundImage: `url(${priceIcon})` }}></span>
-                <input {...register('Costo')} type="text" value={costInput} onInput={normalizeInput}></input>
+                <input {...register('Costo', { required: true })} type="text" value={costInput} onInput={normalizeInput}></input>
             </label>
             <label >
                 Comentario (opcional):
                 <span style={{ backgroundImage: `url(${commentIcon})` }}></span>
                 <input {...register('Comentario')}type="text"></input>
             </label>
-            <input className="new-account-form__button" type="submit" value="Aceptar" onClick={togglePopup}/>
+            <input className="new-account-form__button" type="submit" value="Aceptar"/>
         </form>
     );
 }

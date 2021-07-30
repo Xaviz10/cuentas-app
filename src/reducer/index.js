@@ -12,6 +12,7 @@ const initialState = {
     shopping: {
         data_send: false,
         loading: false,
+        product_edit: {},
         shopping_list: [
             // {
             //     Producto: "Café",
@@ -244,7 +245,6 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    console.log('reducer', Boolean(action.payload))
     switch (action.type) {
         case 'RESET_DATA_SEND':
     
@@ -262,7 +262,6 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 loading: true,
-
             }
         case 'POST_ACCOUNT_DONE':
         
@@ -303,10 +302,10 @@ const reducer = (state = initialState, action) => {
                     ...state.shopping,
                     shopping_list: state.shopping.shopping_list.concat(action.payload),
                     loading: false,
-                    data_send: true,}
+                    data_send: true,
+                    product_edit: {}}
             }
         case 'RESET_DATA_NEW_ITEM_SEND':
-
             return {
                 ...state,
                 shopping: {
@@ -346,6 +345,37 @@ const reducer = (state = initialState, action) => {
                     ...state.shopping,
                     shopping_list: [...state.shopping.shopping_list],
                     loading: false,}
+            }
+        case 'PATCH_ITEM_BUY_REQUESTED':
+            return {
+                ...state,
+                shopping: {
+                    ...state.shopping,
+                    loading: true,}
+            }
+        case 'PATCH_ITEM_BUY_DONE':
+            return {
+                ...state,
+                shopping: {
+                    ...state.shopping,
+                    loading: false,
+                    data_send: true,
+                    product_edit: {}}
+            }
+        case 'EDIT_PRODUCT':
+            console.log('reducerEdit', action.payload)
+            return {
+                ...state,
+                shopping: {
+                    ...state.shopping,
+                    product_edit: action.payload}
+            }
+        case 'RESET_EDIT_PRODUCT':
+            return {
+                ...state,
+                shopping: {
+                    ...state.shopping,
+                    product_edit: {}}
             }
         default:
             return state;
