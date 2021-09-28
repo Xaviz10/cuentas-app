@@ -18,11 +18,10 @@ const PopUpNewItem = ({ popupNewItemState, togglePopupNewItem}) => {
     const dataSend = useSelector(state => state.shopping.data_send);
     const product = useSelector(state => state.shopping.product_edit);
     
-    console.log("producto",product);
-    console.log(Boolean(product.Producto));
     
     useEffect(() => {
         reset();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [product])
     const onSubmit = (data) => {
 
@@ -50,8 +49,8 @@ const PopUpNewItem = ({ popupNewItemState, togglePopupNewItem}) => {
             setTimeout(() => {
                 dispatch(resetEditProduct());
                 dispatch(getProductList());
-                togglePopupNewItem();
             } , 2050)
+            togglePopupNewItem();
         }
     }
 

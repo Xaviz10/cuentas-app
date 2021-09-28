@@ -67,7 +67,7 @@ const TableViewer = ({dateHourFormater}) => {
                 </table>
             </div>
             
-            <a className="table-accounts__link" target="_blank" href="https://docs.google.com/spreadsheets/d/175BoIJSFiQmeLXf3goVCcUeWnYjEt9QdIzUYcFyLnRQ/edit?usp=sharing">Ir a tabla en Excel</a>
+            <a className="table-accounts__link" target="_blank" href="https://docs.google.com/spreadsheets/d/175BoIJSFiQmeLXf3goVCcUeWnYjEt9QdIzUYcFyLnRQ/edit?usp=sharing" rel="noreferrer">Ir a tabla en Excel</a>
         </div>
     );
 }
