@@ -9,6 +9,7 @@ export const postAccount = () => {
             type: 'POST_ACCOUNT_REQUESTED',
         })
 
+        // eslint-disable-next-line no-unused-vars
         const billData = await Axios.post('https://sheet.best/api/sheets/985f20ae-8841-4340-bbdb-491b3c707508', newAccount);
 
         dispatch({
@@ -49,6 +50,7 @@ export const postNewItem = (newItem) => {
             type: 'POST_NEW_ITEM_REQUESTED',
         })
 
+        // eslint-disable-next-line no-unused-vars
         const newItemData = await Axios.post('https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122', newItem);
 
         dispatch({
@@ -73,6 +75,7 @@ export const deleteItem = (itemName) => {
             type: 'DELETE_ITEM_REQUESTED',
         });
 
+        // eslint-disable-next-line no-unused-vars
         const deletedItem = await Axios.delete(`https://sheet.best/api/sheets/a282074d-7798-43e8-ba31-f09d94819122/Producto/*${itemName}*`);
 
         dispatch({
