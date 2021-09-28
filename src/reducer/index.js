@@ -338,7 +338,7 @@ const reducer = (state = initialState, action) => {
                     loading: true,}
             }
         case 'DELETE_ITEM_DONE':
-            const deleted = state.shopping.shopping_list.splice(action.payload, 1);
+            // const deleted = state.shopping.shopping_list.splice(action.payload, 1);
             return {
                 ...state,
                 shopping: {

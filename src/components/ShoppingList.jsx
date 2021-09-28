@@ -19,6 +19,7 @@ const ShoppingList = ({togglePopupNewItem, dateHourFormater}) => {
     useEffect(() => {
         dispatch(getProductList());
         setLastUpdate(dateHourFormater());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleDeleteItem = (itemName) => {
@@ -41,7 +42,7 @@ const ShoppingList = ({togglePopupNewItem, dateHourFormater}) => {
             <h2 className="shopping-list-title">Lista de Compras</h2>
             <p className="shopping-list-last-update">Última actualización: <span> {lastUpdate} </span> </p>
             
-            <button className="new-item-button" onClick={togglePopupNewItem}>
+            <button className="new-item-button" onClick={() => togglePopupNewItem()}>
                 <span className="new-item-button--add-icon" style={{ backgroundImage: `url(${newItemIcon})` }}></span>
                 Adicionar Producto
             </button>

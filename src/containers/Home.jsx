@@ -12,11 +12,11 @@ const Home = () => {
 
     const [popupState, setPopupState] = useState(false);
     const [popupNewItemState, setPopupNewItemState] = useState(false);
-    const formatterCurrency = new Intl.NumberFormat('es-CO', {
-        style: 'currency',
-        currency: 'COP',
-        maximumFractionDigits: '0',
-    });
+    // const formatterCurrency = new Intl.NumberFormat('es-CO', {
+    //     style: 'currency',
+    //     currency: 'COP',
+    //     maximumFractionDigits: '0',
+    // });
 
     const dateHourFormater = () => {
         const today = new Date();
